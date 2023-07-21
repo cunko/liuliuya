@@ -1,28 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>作业</title>
+  <meta charset="UTF-8">
+  <title>Xecades - 个人主页</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .background-image {
+      background-image: url("7.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6; /* Set the opacity to make the background semi-transparent */
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.6); /* Set the div box background color to semi-transparent */
+      color: #ccc; /* Text color */
+      font-family: Arial, sans-serif;
+      position: absolute;
+      top: 30%;
+      left: 75%;
+      transform: translate(-50%, -50%); /* Center the div box on the page */
+      border-radius: 20px; /* Set the border radius for rounded corners */
+      max-width: 90%; /* Limit the width of the div box */
+      padding: 20px; /* Add some padding to the content */
+      line-height: 1.6; /* Set line height for better readability */
+      text-align: justify; /* Align the text with justified text */
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 10px; /* Adjust the spacing between paragraphs */
+    }
+    em {
+      font-style: italic;
+    }
+    a {
+      color: #ccc; /* Darker link color */
+      text-decoration: none;
+      border-bottom: 1px dashed #ccc; /* Darker dashed link underline */
+    }
+    a:hover {
+      border-bottom-style: solid;
+    }
+  </style>
 </head>
 <body>
-<h3>请注册</h3>
-<p>已有账号？&nbsp;<a href="#">登录</a></p>
-<form action="">
-    <label for="001">用户名</label>
-    <input type="text" name="yhm" placeholder="请输入用户名" id="001"> <br>
-    <label for="002">手机号</label>
-    <select name="" id="">
-        <option value="0" selected>+86</option>
-    </select>
-    <input type="text" name="yhm" placeholder="请输入手机号" id="002"> <br>
-    <label for="003">密&emsp;码</label>
-    <input type="password" name="yhm" placeholder="请设置登录密码" id="003"> <br>
-    <label for="004">验证码</label>
-    <input type="text" placeholder="请输入验证码" id="004">
-    <input type="button" value="获取验证码"> <br>
-    <input type="checkbox">阅读并接受协议 <br>
-    <input type="button" value="注册" name="f"> <br> <br>
-    <input type="reset">
-</form>
+  <div class="background-image"></div>
+  <div class="content">
+    <h1>你好</h1>
+    <p>我是 liuliuya，
+是一名电气工程及其自动化专业的学生。
+我会在博客/<a href="blog.html">博客</a>上记录我感兴趣的内容。有时，我会开发一些好玩的项目/<a href="lab.html">实验室</a>。
+我喜欢邂逅有趣的灵魂，他们给了我很多新的思考，伴随着我的成长。</p>
+
+  </div>
 </body>
 </html>
+
