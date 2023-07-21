@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Entire Page in Black</title>
-  <style>
-    body {
-      background-color: black;
-      color: white; /* Set the text color to white for visibility */
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       body {
+      margin: 0;
+      padding: 0;
+      background-image: url('8.jpg');
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+       .main-box{
+           width: 1000px;
+           margin: 20px auto;
+       }
+       .flex-box{
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           margin-bottom: 20px;
+       }
+       .block{
+           width: 300px;
+           height: 300px;
+           overflow: hidden;
+           position: relative;
+       }
+       .desc{
+           position: absolute;
+           z-index: 3;
+           opacity: 0;
+           top:0;
+           left: 0;
+           width: 100%;
+           bottom: 0;
+           cursor: pointer;
+           background: rgba(0,0,0,0.5);
+           transition: opacity  0.5s  ease-in;
+           color: #fff;
+           font-size: 18px;
+           font-weight: 600;
+           text-align: center;
+           line-height: 300px;
+           letter-spacing: 4px;
+
+
+
+
+       }
+       .block:hover .desc{
+           opacity: 1;
+
+       }
+
+       .block .pic{
+           transition: all  0.3s ease-in;
+       }
+       .block:hover img{
+           transform: scale(1.2);
+       }
+
+
   </style>
 </head>
 <body>
-  <h1>Hello, this is a black page!</h1>
-  <p>This is the content of the page.</p>
+<div  class="main-box">
+    <div  class="flex-box">
+        <div  class="block">
+            <div class="desc">
+                <a href="#https://www.baidu.com">智能家具系统</a>
+
+            </div>
+            <img class="pic" src="22.jpg"  width="300"/>
+
+        </div>
+        <div  class="block">
+            <div class="desc">
+                <a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a>
+
+            </div>
+            <img class="pic" src="33.jpg"  width="300"/>
+
+        </div>
+
+        <div  class="block">
+            <div class="desc">
+                <a href="#https://www.baidu.com">STM32简单示例</a>
+
+            </div>
+            <img class="pic" src="44.jpg"  width="300"/>
+        </div>
+
+
+
+    </div>
+
+</div>
 </body>
 </html>
