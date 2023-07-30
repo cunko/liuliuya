@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>我的项目</title>
+  <style>
+    body {
+      background-color: #222; /* Darker background color */
+      color: #ccc; /* Darker text color */
+      font-family: Arial, sans-serif;
+      margin: 20px; /* Add margin to create space around the content */
+    }
+    .content {
+      max-width: 600px; /* Set the maximum width for content */
+      margin: 0 auto; /* Center the content horizontally */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+      grid-gap: 20px; /* Add gap between grid items */
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center; /* Center "我的项目" horizontally */
+      grid-column: span 3; /* Make the heading span across all three columns */
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 25px; /* Add some space between paragraphs */
+      line-height: 1.6; /* Set line height for better readability */
+      text-indent: 2em; /* Add indentation of two spaces at the beginning */
+    }
+    em {
+      font-style: italic;
+    }
+    a {
+      color: #ccc; /* Darker link color */
+      text-decoration: none;
+      border-bottom: 1px dashed #ccc; /* Darker dashed link underline */
+    }
+    a:hover {
+      border-bottom-style: solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>我的项目</h1>
+    <p><a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a></p>
+    <p><a href="https://cunko.github.io/Guide/#/">我的指南</a></p>
+    <p><a href="https://cunko.github.io/docsify/#/">Docsify文档模板</a></p>
+    <p><a href="https://cunko.github.io/books/">我的gitbook</a></p>
+    <p><a href="https://cunko.github.io/Weblinks/cn/index.html">网址导航网站</a></p>
+    <p><a href="#https://www.baidu.com">智能家具系统</a></p>
+    <p><a href="#https://www.baidu.com">STM32</a></p>
+    <p><a href="#https://www.baidu.com">51单片机</a></p>
+    <p><a href="#https://www.baidu.com">群晖服务器</a></p>
+
+  </div>
+</body>
+</html>
