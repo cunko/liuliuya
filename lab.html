@@ -1,62 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的项目</title>
-  <style>
-    body {
-      background-color: #222; /* Darker background color */
-      color: #ccc; /* Darker text color */
-      font-family: Arial, sans-serif;
-      margin: 20px; /* Add margin to create space around the content */
-    }
-    .content {
-      max-width: 600px; /* Set the maximum width for content */
-      margin: 0 auto; /* Center the content horizontally */
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-      grid-gap: 20px; /* Add gap between grid items */
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center; /* Center "我的项目" horizontally */
-      grid-column: span 3; /* Make the heading span across all three columns */
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 25px; /* Add some space between paragraphs */
-      line-height: 1.6; /* Set line height for better readability */
-      text-indent: 2em; /* Add indentation of two spaces at the beginning */
-    }
-    em {
-      font-style: italic;
-    }
-    a {
-      color: #ccc; /* Darker link color */
-      text-decoration: none;
-      border-bottom: 1px dashed #ccc; /* Darker dashed link underline */
-    }
-    a:hover {
-      border-bottom-style: solid;
-    }
-  </style>
-  <!-- 图标引入 -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        .background {
+            background-color: #222222;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .background div {
+            width: 300px;
+            height: 300px;
+            background-color: #cccccc;
+            margin: 40px;
+            border-radius: 10px; /* 轻微圆角效果 */
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+
+        .desc a {
+            text-decoration: none; /* 取消下划线 */
+            color: #964b00; /* 设置咖啡色文字 */
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 4px;
+        }
+
+        .desc a:hover {
+            text-decoration: underline; /* 悬停时添加下划线 */
+            color: #8B4513; /* 设置咖啡色文字（不同的咖啡色，以示区分） */
+        }
+    </style>
+        <!-- 图标引入 -->
     <script src="https://kit.fontawesome.com/9059b1b547.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
-  <div class="content">
-    <h1>我的项目</h1>
-    <p><a href="https://github.com/cunko/cunko.github.io"><i class="fa-light fa-rocket"></i>个人网站搭建</a></p>
-    <p><i class="fa-thin fa-rocket"></i> <a href="https://cunko.github.io/Guide/#/">我的指南</a></p>
-    <p><i class="fa-solid fa-paper-plane"></i><a href="https://cunko.github.io/docsify/#/">Docsify文档模板</a></p>
-    <p><a href="https://cunko.github.io/books/">我的gitbook</a></p>
-    <p><a href="https://cunko.github.io/Weblinks/cn/index.html">网址导航网站</a></p>
-    <p><a href="#https://www.baidu.com">智能家具系统</a></p>
-    <p><a href="#https://www.baidu.com">STM32</a></p>
-    <p><a href="#https://www.baidu.com">51单片机</a></p>
-    <p><a href="#https://www.baidu.com">群晖服务器</a></p>
+<div class="background">
+    <div class="desc">
+        <i class="fa-light fa-rocket"></i> <a href="https://www.baidu.com">STM32简单示例</a>
+    </div>
 
-  </div>
+    <div class="desc">
+        <i class="fa-thin fa-rocket"></i> <a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a>
+    </div>
+
+    <div class="desc">
+        <i class="fa-light fa-rocket"></i><a href="#https://www.baidu.com"><i class="fa-light fa-rocket"></i>智能家具系统</a>
+    </div>
+
+    <div class="desc">
+        <a href="#https://www.baidu.com">智能家具系统</a>
+    </div>
+
+    <div class="desc">
+        <a href="#https://www.baidu.com">STM32简单示例</a>
+    </div>
+
+    <div class="desc">
+        <a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a>
+    </div>
+
+    <div class="desc">
+        <a href="#https://www.baidu.com">智能家具系统</a>
+    </div>
+
+    <div class="desc">
+        <a href="#https://www.baidu.com">智能家具系统</a>
+    </div>
+</div>
 </body>
 </html>
