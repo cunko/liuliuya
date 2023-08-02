@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-
     <style>
         .background {
             background-color: #222222;
@@ -19,23 +18,24 @@
             opacity: 0.6;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center; /* Center the content horizontally */
             align-items: center;
         }
 
         .background div {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             background-color: #cccccc;
             margin: 40px;
-            border-radius: 10px; /* 轻微圆角效果 */
-            display: flex; /* 使用 Flexbox 布局 */
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .desc a {
-            text-decoration: none; /* 取消下划线 */
-            color: #964b00; /* 设置咖啡色文字 */
+            text-decoration: none;
+            color: #964b00;
             font-size: 18px;
             font-weight: 600;
             text-align: center;
@@ -43,48 +43,54 @@
         }
 
         .desc a:hover {
-            text-decoration: underline; /* 悬停时添加下划线 */
-            color: #8B4513; /* 设置咖啡色文字（不同的咖啡色，以示区分） */
+            text-decoration: underline;
+            color: #8B4513;
         }
     </style>
-        <!-- 图标引入 -->
+    <!-- 图标引入 -->
     <script src="https://kit.fontawesome.com/9059b1b547.js" crossorigin="anonymous"></script>
-
-
-
 </head>
 <body>
 <div class="background">
     <div class="desc">
-        <i class="fa-light fa-rocket"></i> <a href="https://www.baidu.com">STM32简单示例</a>
+        <!-- 礼物 -->
+        <h2><i class="fa-solid fa-gift"></i>&emsp;</h2>
+        <p><a href="https://cunko.github.io/Guide/#/">我的指南</a></p>
     </div>
-
+    <!-- 爱心 -->
     <div class="desc">
-        <i class="fa-thin fa-rocket"></i> <a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a>
-    </div>
-
-    <div class="desc">
-        <i class="fa-light fa-rocket"></i><a href="#https://www.baidu.com"><i class="fa-light fa-rocket"></i>智能家具系统</a>
-    </div>
-
-    <div class="desc">
-        <a href="#https://www.baidu.com">智能家具系统</a>
-    </div>
-
-    <div class="desc">
-        <a href="#https://www.baidu.com">STM32简单示例</a>
-    </div>
-
-    <div class="desc">
+        <h2><i class="fa-solid fa-heart"></i>&emsp;</h2>
         <a href="https://github.com/cunko/cunko.github.io">个人网站搭建</a>
     </div>
-
+    <!-- 书 -->
     <div class="desc">
+        <h2><i class="fa-solid fa-book"></i>&emsp;</h2>
+        <p><a href="https://cunko.github.io/docsify/#/">Docsify文档模板</a></p>
+    </div>
+    <!-- 钥匙 -->
+    <div class="desc">
+        <h2><i class="fa-solid fa-key"></i>&emsp;</h2>
+        <p><a href="https://cunko.github.io/books/">我的gitbook</a></p>
+    </div>
+    <!-- 板手 -->
+    <div class="desc">
+        <h2><i class="fa-solid fa-wrench"></i>&emsp;</h2>
+        <a href="#https://www.baidu.com">STM32</a>
+    </div>
+    <!-- 飞机 -->
+    <div class="desc">
+        <h2><i class="fa-solid fa-paper-plane"></i>&emsp;</h2>
+        <p><a href="https://cunko.github.io/Weblinks/cn/index.html">网址导航网站</a></p>
+    </div>
+    <!-- 卡车 -->
+    <div class="desc">
+        <h2><i class="fa-solid fa-truck"></i>&emsp;</h2>
         <a href="#https://www.baidu.com">智能家具系统</a>
     </div>
-
+    <!-- 黑客 -->
     <div class="desc">
-        <a href="#https://www.baidu.com">智能家具系统</a>
+        <h2><i class="fa-solid fa-user-secret"></i>&emsp;</h2>
+        <a href="#https://www.baidu.com">51单片机</a>
     </div>
 </div>
 </body>
