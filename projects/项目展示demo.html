@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>liuliu的项目展示</title>
+    <style>
+        body {
+            /* background-image: url("images/4502.png"); */
+            background-color: #222222;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 80%;
+            height: 70%;
+            border-radius: 35px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1),
+                0px 10px 20px rgba(0, 0, 0, 0.2),
+                0px 20px 40px rgba(0, 0, 0, 0.3),
+                0px 30px 60px rgba(0, 0, 0, 0.4);
+            position: relative;
+            backdrop-filter: blur(20px);
+            transition: transform 0.2s;
+            animation: float 3s infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box.jelly {
+            animation: jelly 0.7s;
+        }
+		
+		        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            /* Add some space between paragraphs */
+            line-height: 1.6;
+            /* Set line height for better readability */
+            text-indent: 2em;
+            /* Add indentation of two spaces at the beginning */
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: #0b0b0b;
+            /* Darker link color */
+            text-decoration: none;
+            /* border-bottom: 1px dashed #ccc; */
+            /* Darker dashed link underline */
+			transition: color 0.3s; /* 添加颜色过渡效果 */
+        }
+		
+
+        a:hover {
+            color: #ff69b4; /* 粉色 */
+        }
+		
+		
+    </style>
+	<script src="https://kit.fontawesome.com/9059b1b547.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box" id="box">
+        <div class="content">
+
+               <!-- 爱心 -->
+			   <div>
+                  <p><i class="fa-sharp fa-solid fa-earth-americas"></i>&emsp;<a href="https://cunko.github.io/">主站</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-earth-americas"></i>&emsp;<a href="https://cunko.github.io/chirpy-starter/">副站</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="#https://www.baidu.com">足迹</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="#https://www.baidu.com">网络宠物</a></p>
+               </div>
+			   
+			   <!-- 书 -->
+			   			   <div>
+                  <p><i class="fa-solid fa-book"></i>&emsp;<a href="https://cunkozuzhi.github.io/begin/#/">快速开始</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-book"></i>&emsp;<a href="https://cunko.github.io/Guide/#/">我的指南</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-book"></i>&emsp;<a href="https://cunkozuzhi.github.io/lovefile/#/">爱心文档</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-book"></i>&emsp;<a href="#https://www.baidu.com">STM32指南</a></p>
+               </div>
+			   
+			   
+			   
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-image"></i>&emsp;<a href="#https://www.baidu.com">相册</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-image"></i>&emsp;<a href="#https://www.baidu.com">瀑布流</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-image"></i>&emsp;<a href="#https://www.baidu.com">3D盒子</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-image"></i>&emsp;<a href="#https://www.baidu.com">空间变换</a></p>
+               </div>
+			   
+			   
+			   
+			   			   <div>
+                  <p><i class="fa-sharp fa-solid fa-image"></i>&emsp;<a href="#https://www.baidu.com">3D照片墙</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="https://www.csdn.net/">时间轴</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-house"></i>&emsp;<a href="https://linux.vbird.org/">我的小屋</a></p>
+               </div>
+			   
+			   
+			   			   <div>
+                  <p><i class="fa-solid fa-robot"></i>&emsp;<a href="https://bard.google.com/chat">Bard</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-robot"></i>&emsp;<a href="https://chat.openai.com/">ChatGPT</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-robot"></i>&emsp;<a href="https://yiyan.baidu.com/">文心一言</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-robot"></i>&emsp;<a href="https://qianwen.aliyun.com/">通义千问</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-robot"></i>&emsp;<a href="https://flowgpt.com/">FlowGPT</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="https://www.runoob.com/">菜鸟教程</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="https://www.52pojie.cn/">吾爱破解</a></p>
+               </div>
+			   			   <div>
+                  <p><i class="fa-solid fa-heart"></i>&emsp;<a href="https://github.com/cunko">Github</a></p>
+               </div>
+
+
+			   			   <div>
+                  <p><i class="fa-solid fa-paper-plane"></i>&emsp;<a href="https://88liuliuya.top/">返回主页</a></p>
+               </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
